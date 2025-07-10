@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TASK 8 NO.11 </title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+    }
+    input[type="button"] {
+      padding: 5px 10px;
+      margin-left: 5px;
+    }
+    #Result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h3>Enter a value:</h3>
+<input type="text" id="text1">
+<input type="button" value="Add" onclick="add_element_to_array();">
+<input type="button" value="Display" onclick="display_array();">
+<input type="button" value="Join Values" onclick="join_array();">
+<input type="button" value="Sum & Product" onclick="sum_and_product();">
+
+<div id="Result"></div>
+
+<script>
+  var array = [];
+  var x = 0;
+
+  function add_element_to_array() {
+    let value = document.getElementById("text1").value;
+
+    if (value === "") {
+      alert("Please enter a value.");
+      return;
+    }
+
+    // Convert to number if it's numeric
+    if (!isNaN(value)) {
+      value = Number(value);
+    }
+
+    array[x] = value;
+    alert("Element: " + array[x] + " Added at index " + x);
+    x++;
+    document.getElementById("text1").value = "";
+  }
+
+  function display_array() {
+    let e = "<hr/>";
+    for (let y = 0; y < array.length; y++) {
+      e += "Element " + y + " = " + array[y] + "<br/>";
+    }
+    document.getElementById("Result").innerHTML = e;
+  }
+
+  function join_array() {
+    let result = "<hr/>";
+    result += "<b>Joined using default (comma):</b> " + array.join() + "<br/>";
+    result += "<b>Joined using '+':</b> " + array.join('+') + "<br/>";
+    result += "<b>Joined using ' | ':</b> " + array.join(' | ') + "<br/>";
+    document.getElementById("Result").innerHTML = result;
+  }
+
+  function sum_and_product() {
+    let sum = 0;
+    let product = 1;
+    let hasNumber = false;
+
+    for (let i = 0; i < array.length; i++) {
+      if (typeof array[i] === 'number') {
+        sum += array[i];
+        product *= array[i];
+        hasNumber = true;
+      }
+    }
+
+    let result = "<hr/>";
+    if (hasNumber) {
+      result += "Sum of numeric values: " + sum + "<br/>";
+      result += "Product of numeric values: " + product + "<br/>";
+    } else {
+      result += "No numeric values in array.<br/>";
+    }
+
+    document.getElementById("Result").innerHTML = result;
+  }
+</script>
+
+</body>
+</html>

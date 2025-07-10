@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TASK 8 JS </title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.5; }
+        h2 { background-color: #f0f0f0; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript Weekly Tasks</h1>
+
+<!-- Task 1 -->
+<h2>Task 1: Variable Types and Document Write</h2>
+<script>
+    var num = 10;
+    var floatNum = 3.14;
+    var name = "SWORNALATA ";
+    var isStudent = true;
+
+    document.write("Number: " + num + "<br>");
+    document.write("Float: " + floatNum + "<br>");
+    document.write("String: " + name + "<br>");
+    document.write("Boolean: " + isStudent + "<br>");
+</script>
+
+<!-- Task 2 -->
+<h2>Task 2: Prompt and Alert for Name & Student ID</h2>
+<script>
+    var name = prompt("Enter Your Name:");
+    var studentId = prompt("Enter Your Student ID:");
+    alert("Name: " + name + "\nStudent ID: " + studentId);
+</script>
+
+<!-- Task 3 -->
+<h2>Task 3: Grading System (if...else if...else)</h2>
+<script>
+    var marks = parseInt(prompt("Enter your marks:"));
+    if (marks >= 80 && marks <= 100) {
+        alert("Distinction");
+    } else if (marks >= 60) {
+        alert("First Division");
+    } else if (marks >= 50) {
+        alert("Second Division");
+    } else if (marks >= 40) {
+        alert("Third Division");
+    } else {
+        alert("Fail");
+    }
+</script>
+
+<!-- Task 4 -->
+<h2>Task 4: Switch Case for Days</h2>
+<script>
+    var day = parseInt(prompt("Enter number for day (1-7):"));
+    switch(day) {
+        case 1: alert("Sunday"); break;
+        case 2: alert("Monday"); break;
+        case 3: alert("Tuesday"); break;
+        case 4: alert("Wednesday"); break;
+        case 5: alert("Thursday"); break;
+        case 6: alert("Friday"); break;
+        case 7: alert("Saturday"); break;
+        default: alert("Invalid");
+    }
+</script>
+
+<!-- Task 5 -->
+<h2>Task 5: Display Images Using Loop</h2>
+<script>
+    for (var i = 1; i <= 4; i++) {
+        document.write('<img src="' + i + '.jpg" alt="Image ' + i + '" width="150" height="150" style="margin:10px; border:2px solid #ccc;"><br><br>');
+    }
+</script>
+
+<!-- Task 6 -->
+<h2>Task 6: Multiplication Table of 5</h2>
+<script>
+    for (var i = 1; i <= 10; i++) {
+        document.write("5 * " + i + " = " + (5 * i) + "<br>");
+    }
+</script>
+
+<!-- Task 7 -->
+<h2>Task 7: Table Layout with Alternate Row Colors</h2>
+<script>
+    document.write('<table border="1" cellpadding="5">');
+    document.write('<tr><th>Number</th><th>Square</th></tr>');
+    for (var i = 1; i <= 5; i++) {
+        var bgColor = (i % 2 === 0) ? '#e0e0e0' : '#ffffff';
+        document.write('<tr style="background-color:' + bgColor + ';">');
+        document.write('<td>' + i + '</td><td>' + (i * i) + '</td>');
+        document.write('</tr>');
+    }
+    document.write('</table>');
+</script>
+
+<!-- Task 8 -->
+<h2>Task 8: Join Array Elements into String</h2>
+<script>
+    var myColor = ["Red", "Green", "White", "Black"];
+    document.write(myColor.toString() + "<br>");
+    document.write(myColor.join() + "<br>");
+    document.write(myColor.join('+') + "<br>");
+</script>
+
+<!-- Task 9 -->
+<h2>Task 9: Sum and Product of Array</h2>
+<script>
+    var numbers = [1, 2, 3, 4, 5];
+    var sum = 0;
+    var product = 1;
+    for (var i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+        product *= numbers[i];
+    }
+    document.write("Sum: " + sum + "<br>");
+    document.write("Product: " + product + "<br>");
+</script>
+
+<!-- Task 10 -->
+<h2>Task 10: Area of Rectangle Function</h2>
+<script>
+    function areaOfRectangle(length, breadth) {
+        return length * breadth;
+    }
+    var length = prompt("Enter length of rectangle:");
+    var breadth = prompt("Enter breadth of rectangle:");
+    alert("Area of rectangle: " + areaOfRectangle(length, breadth));
+</script>
+
+</body>
+</html>

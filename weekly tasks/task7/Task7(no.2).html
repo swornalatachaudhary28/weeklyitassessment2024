@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Stinky Pete's Pirate Tavern</title>
+  <style>
+    body {
+      background-color: #00BFFF; /* Body background */
+      color: #330000; /* Text color */
+      font-family: Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      border: 3px solid black;
+    }
+
+    header, footer {
+      background-color: #ccaa66; /* Header and footer */
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    nav {
+      width: 200px;
+      background-color: #E8D882; /* Navigation background */
+      padding: 20px;
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      background-color: #f1e8b0; /* Main content background */
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main-text {
+      max-width: 60%;
+    }
+
+    .main-text ul {
+      padding-left: 20px;
+    }
+
+    .main-text address {
+      margin-top: 20px;
+      font-style: normal;
+    }
+
+    .pirate-image {
+      max-width: 35%;
+    }
+
+    .pirate-image img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #330000;
+    }
+
+    footer {
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Stinky Pete's Pirate Tavern</h1>
+    </header>
+
+    <div class="content">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Grog</a>
+        <a href="#">Shanties</a>
+        <a href="#">Become a swab</a>
+      </nav>
+
+      <main>
+        <div class="main-text">
+          <p>Avast maties! Here ye'll be findin' all these delights...</p>
+          <ul>
+            <li>Great grog</li>
+            <li>All the rum you can drink</li>
+            <li>Good honest pirate fare like weevily biscuits and stewed rat</li>
+            <li>Wenches and swabs for every taste</li>
+            <li>Salty seadogs singin' shanties</li>
+            <li>...</li>
+          </ul>
+          <address>
+            Berth 23<br>
+            Nottingham Docks<br>
+            0115 9324567
+          </address>
+        </div>
+        <div class="pirate-image">
+          <img src="piraate.png" alt="Pirate Image">
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>Copyright © 2011 Stinky Pete’s Pirate Tavern<br>
+        <a href="mailto:stinkypete@arrrr.com">stinkypete@arrrr.com</a>
+      </p>
+    </footer>
+  </div>
+
+</body>
+</html>

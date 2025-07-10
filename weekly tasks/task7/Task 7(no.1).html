@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      position: relative;
+      width: 380px;
+      height: 292px;
+      border: 3px double gray;
+      padding: 10px;
+    }
+
+    .header1, .header2, .header3 {
+      position: absolute;
+      top: 0;
+      height: 40px;
+      text-align: center;
+      font-weight: bold;
+      border: 1px double black;
+      background-color: #f2f2f2;
+    }
+
+    .header1 {
+      left: 0;
+      width: 200px;
+    }
+
+    .header2 {
+      left: 200px;
+      width: 100px;
+    }
+
+    .header3 {
+      left: 300px;
+      width: 100px;
+    }
+
+    .blue {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 200px;
+      height: 250px;
+      background-color: lightblue;
+      border: 1px double gray;
+      padding: 10px;
+    }
+
+    .yellow {
+      position: absolute;
+      top: 40px;
+      left: 200px;
+      width: 100px;
+      height: 50px;
+      background-color: yellow;
+      border: 1px double gray;
+      text-align: right;
+      padding-top: 15px;
+      font-weight: bold;
+    }
+
+    .red {
+      position: absolute;
+      top: 40px;
+      left: 300px;
+      width: 100px;
+      height: 50px;
+      background-color: red;
+      border: 1px double gray;
+      text-align: center;
+      padding-top: 15px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .green {
+      position: absolute;
+      top: 90px;
+      left: 200px;
+      width: 180px;
+      height: 200px;
+      background-color: green;
+      color: black;
+      padding: 10px;
+      border: 1px double gray;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <div class="header1">Column 1</div>
+  <div class="header2">Column 2</div>
+  <div class="header3">Column 3</div>
+
+  <div class="blue">
+    <strong>A numbered list:</strong>
+    <ol>
+      <li>Able</li>
+      <li>Baker</li>
+      <li>Charlie</li>
+      <li>Delta</li>
+      <li>Echo</li>
+    </ol>
+  </div>
+
+  <div class="yellow">B</div>
+  <div class="red">C</div>
+
+  <div class="green">
+    <strong>An unnumbered list:</strong>
+    <ul>
+      <li>Pounds</li>
+      <li>Dollars</li>
+      <li>Euro</li>
+      <li>Yen</li>
+      <li>Roubles</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

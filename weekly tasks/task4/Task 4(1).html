@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Layout Page</title>
+  <style>
+    /* image1.jpg with 5px border */
+    .img1 {
+      border: 5px solid black;
+    }
+
+    /* image2.jpg resized and clickable */
+    .img2 {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* image3.jpg aligned to left */
+    .img3 {
+      float: left;
+      margin-right: 20px;
+    }
+
+    /* image4.png with 50px margin around */
+    .img4 {
+      margin: 50px;
+    }
+
+    /* General text alignment */
+    .content {
+      margin-top: 20px;
+      overflow: auto;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Web Page with Styled Images</h2>
+
+  <!-- Image 1 with border -->
+  <p><img src="image1.jpg" alt="Image 1" class="img1"> This is image1 with a 5px solid border.</p>
+
+  <!-- Image 2 resized and linked to original -->
+  <p>
+    <a href="image2.jpg" target="_blank">
+      <img src="image2.jpg" alt="Image 2" class="img2">
+    </a>
+    This is image2 resized to 100x100 pixels and clickable to view full size.
+  </p>
+
+  <!-- Image 3 aligned to left with text wrapping -->
+  <div class="content">
+    <img src="image3.jpg" alt="Image 3" class="img3">
+    <p>
+      This paragraph wraps around image3 aligned to the left. You can describe the image content or any related topic here to demonstrate text alignment. The image floats and the text adjusts accordingly.
+    </p>
+  </div>
+
+  <!-- Image 4 with 50px margin and aligned text -->
+  <div class="content">
+    <img src="image4.png" alt="Image 4" class="img4">
+    <p>
+      This is image4 with 50px space on all sides (top, bottom, left, right). The text is aligned beside or below it as needed to maintain layout aesthetics.
+    </p>
+  </div>
+
+</body>
+</html>
